@@ -1,6 +1,6 @@
 import React from "react";
 import "./ervaGlobal.css";
-import AcoitaCavaloImg from "../assets/CascadeAcoita-cavalo.jpg";
+import AcoitaCavaloImg from "../assets/CascadeAcoita-Cavalo.jpg";
 
 function AcoitaCavalo() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ervaGlobal.css";
-import CopaibaImg from "../assets/Oleodecopaiba.jpg";
+import CopaibaImg from "../assets/OleodeCopaiba.jpg";
 
 function Copaiba() {
   return (
