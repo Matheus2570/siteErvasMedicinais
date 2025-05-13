@@ -1,12 +1,12 @@
 import React from "react";
 import "./ervaGlobal.css";
-import AcoitaCavaloImg from "../assets/CascadeAçoita-cavalo.jpg";
+import AcoitaCavaloImg from "../assets/CascadeAcoita-cavalo.jpg";
 
 function AcoitaCavalo() {
   return (
     <div className="planta-container">
       <div className="planta-header">
-        <img src={AcoitaCavaloImg} alt="Casca de Açoita-Cavalo" className="planta-img-lateral" />
+        <img src={AcoitaCavaloImg} alt="Casca de Acoita-Cavalo" className="planta-img-lateral" />
         <div className="planta-header-texto">
           <h1>Casca de Açoita-Cavalo</h1>
           <p><strong>Nome científico:</strong> <em>Luehea divaricata</em></p>
