@@ -1,38 +1,159 @@
 .navBar {
     padding: 1%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 20;
+    background-color: var(--cor-fundo);
 }
 
-.navLista {
-    list-style: none;
+.navTopo {
     display: flex;
-    justify-content: space-around;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 5%;
 }
 
-.navItem {
-    font-size: 1.4em;
-    font-weight: bold;
+.tituloSite {
+    font-size: 2.6em;
+    margin: 0;
 }
 
-.navItem:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
+.teste {
+    margin-left: -9%;
 }
 
-.navLink {
+/* Ícone de 3 barrinhas */
+.bx-menu {
+    font-size: 2.5em;
+    color: var(--cor-icone);
+    margin-right: 5%;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.bx-menu:hover {
+    color: var(--cor-hover);
+}
+
+/* Menu suspenso */
+.menu-opcoes {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 6%;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 225px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] .menu-opcoes {
+    background-color: rgba(22, 22, 22, 0.945);
+    color: rgb(196, 196, 196);
+}
+
+.menu-opcoes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-opcoes ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-opcoes a {
+    display: block;
     text-decoration: none;
-    padding: 10px 20px;
+    color: inherit;
+    padding: 5px 10px;
     border-radius: 6px;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.2s ease, background-color 0.3s, color 0.3s;
 }
 
-.navLink:hover {
-    /* Cor de fundo leve para hover (pode ser controlada depois por tema) */
-    filter: brightness(0.95); /* efeito visual sem definir cor */
+.menu-opções a:hover {
+    transform: translateY(-2px);
 }
 
+/* Hover - tema claro */
+[data-theme="light"] .menu-opcoes a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+}
 
+/* Hover - tema escuro */
+[data-theme="dark"] .menu-opcoes a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
 
+/* Responsividade */
+
+/* Ajustes para telas menores (até 768px) */
+@media (max-width: 768px) {    
+    .navTopo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tituloSite {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .teste {
+        margin-left: 0;
+    }
+
+    /* Ícone de menu (hamburguer) */
+    .bx-menu {
+        font-size: 2.5em;
+
+    }
+
+    /* Menu suspenso */
+    .menu-opcoes {
+        right: 0;
+        width: 100%;
+        top: 70px;
+        display: none; /* Menu escondido por padrão */
+    }
+
+    .navBar:hover .menu-opcoes,
+    .menu-opcoes.aberto {
+        display: block; /* Exibe o menu ao passar o mouse */
+    }
+
+    .menu-opcoes a {
+        padding: 12px; /* Aumentei o padding dos links do menu */
+    }
+}
+
+/* Ajustes para telas muito pequenas (ex. smartphones menores) */
+@media (max-width: 480px) {
+    .navTopo {
+        padding: 0 10px;
+    }
+
+    .tituloSite {
+        font-size: 1.8em;
+    }
+
+    .bx-menu {
+        font-size: 2.2em;
+    }
+
+    .menu-opcoes {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .menu-opcoes a {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

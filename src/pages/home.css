@@ -1,0 +1,244 @@
+.home-container {
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 01% auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.home-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+    margin-bottom: 1rem;
+}
+
+.home-subtitulo {
+    text-align: justify;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    margin-bottom: 1rem;
+}
+
+.home-introducao {
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-imagem {
+    max-width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-texto-container {
+    max-width: 45%;
+    color: var(--cor-texto);
+}
+
+.home-texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.home-blocos {
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.home-bloco {
+    background-color: var(--cor-bloco);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.home-bloco:hover {
+    transform: translateY(-5px);
+    background-color: var(--cor-bloco-hover);
+}
+
+.bloco-titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--cor-titulo-bloco);
+    margin-bottom: 1rem;
+}
+
+.bloco-texto {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Tema claro */
+[data-theme="light"] .home-container {
+    background-color: #fdfdfd;
+}
+
+[data-theme="light"] .home-titulo,
+[data-theme="light"] .home-subtitulo,
+[data-theme="light"] .home-texto,
+[data-theme="light"] .bloco-titulo,
+[data-theme="light"] .bloco-texto {
+    color: #1a1a1a;
+}
+
+[data-theme="light"] .home-bloco {
+    background-color: #ffffff;
+}
+
+[data-theme="light"] .home-bloco:hover {
+    background-color: #f9f9f9;
+}
+
+/* Tema escuro */
+[data-theme="dark"] .home-container {
+    background-color: #1e1e1e;
+}
+
+[data-theme="dark"] .home-titulo,
+[data-theme="dark"] .home-subtitulo,
+[data-theme="dark"] .home-texto,
+[data-theme="dark"] .bloco-titulo,
+[data-theme="dark"] .bloco-texto {
+    color: #e6e6e6;
+}
+
+[data-theme="dark"] .home-bloco {
+    background-color: #333333;
+}
+
+[data-theme="dark"] .home-bloco:hover {
+    background-color: #444444;
+}
+
+
+
+/* Responsividade para dispositivos móveis e telas pequenas */
+
+/* Ajustes para telas até 768px */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .home-header {
+        margin-bottom: 2rem;
+    }
+
+    .home-titulo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-subtitulo {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-introducao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-imagem {
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .home-texto-container {
+        max-width: 80%;
+    }
+
+    .home-texto {
+        font-size: 1.1rem;
+    }
+
+    .home-blocos {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .home-bloco {
+        padding: 1rem;
+    }
+
+    .bloco-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .bloco-texto {
+        font-size: 1rem;
+    }
+}
+
+/* Ajustes para telas até 480px */
+@media (max-width: 480px) {
+    .home-container {
+        padding: 0.8rem;
+    }
+
+    .home-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .home-titulo {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .home-introducao {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .home-imagem {
+        max-width: 90%;
+    }
+
+    .home-texto-container {
+        max-width: 90%;
+    }
+
+    .home-texto {
+        font-size: 1rem;
+    }
+
+    .home-blocos {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .home-bloco {
+        padding: 0.8rem;
+    }
+
+    .bloco-titulo {
+        font-size: 1.4rem;
+    }
+
+    .bloco-texto {
+        font-size: 0.9rem;
+    }
+}

@@ -2,7 +2,7 @@ body {
     background-color: white;
     color: black;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   [data-theme="dark"] body {
@@ -22,14 +22,11 @@ body {
   
   .botao-tema {
     border-radius: 50%;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     background: none;
     border: none;
     color: inherit;
     cursor: pointer;
-    position: fixed;
-    top: 25px;
-    right: 25px;
     padding: 10px;
     transition: color 0.3s, box-shadow 0.3s;
   }
@@ -43,3 +40,18 @@ body {
   }
   
 
+
+/* Responsividade para o botão em telas menores */
+@media (max-width: 768px) {
+  .botao-tema {
+      font-size: 2rem; /* Aumentei o tamanho do botão para dispositivos menores */
+      padding: 18px; /* Aumentei o padding para melhorar a interação */
+  }
+}
+
+@media (max-width: 480px) {
+  .botao-tema {
+      font-size: 1.6rem; /* Tamanho maior para telas menores */
+      padding: 20px; /* Aumentei o padding para melhorar a usabilidade */
+  }
+}
