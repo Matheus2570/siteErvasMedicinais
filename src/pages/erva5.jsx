@@ -1,6 +1,6 @@
 import React from "react";
 import "./ervaGlobal.css";
-import GuaranaImg from "../assets/poDeGuarana.jpg";
+import GuaranaImg from "../assets/PoDeGuarana.jpg";
 
 function Guarana() {
   return (
