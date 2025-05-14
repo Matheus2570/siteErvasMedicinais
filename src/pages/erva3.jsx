@@ -1,6 +1,7 @@
 import React from "react";
 import "./ervaGlobal.css";
 import AndirobaImg from "../assets/OleodeAndiroba.jpg";
+import AndirobaImg2 from "../assets/OleodeAndiroba2.jpg";
 
 function Andiroba() {
   return (
@@ -9,10 +10,11 @@ function Andiroba() {
         <img src={AndirobaImg} alt="Óleo de Andiroba" className="planta-img-lateral" />
         <div className="planta-header-texto">
           <h1>Óleo de Andiroba</h1>
-          <p><strong>Nome científico:</strong> <em>Carapa guianensis</em></p>
+          <p><strong>Nome científico (planta):</strong> <em>Carapa guianensis</em></p>
           <p><strong>Nome popular:</strong> Andiroba</p>
           <p><strong>Parte usada:</strong> Sementes (óleo extraído)</p>
         </div>
+        <img src={AndirobaImg2} alt="Fruto da Andiroba" className="planta-img-lateral" />
       </div>
 
       <div className="planta-secao">

@@ -1,6 +1,7 @@
 import React from "react";
 import "./ervaGlobal.css";
 import CatuabaImg from "../assets/Catuaba.jpg";
+import CatuabaImg2 from "../assets/Catuaba2.jpg";
 
 function Catuaba() {
   return (
@@ -9,10 +10,11 @@ function Catuaba() {
         <img src={CatuabaImg} alt="Catuaba" className="planta-img-lateral" />
         <div className="planta-header-texto">
           <h1>Catuaba</h1>
-          <p><strong>Nome científico:</strong> <em>Erythroxylum catuaba</em></p>
+          <p><strong>Nome científico (planta):</strong> <em>Erythroxylum catuaba</em></p>
           <p><strong>Nome popular:</strong> Catuaba</p>
           <p><strong>Parte usada:</strong> Casca</p>
         </div>
+        <img src={CatuabaImg2} alt="Casca da Catuaba" className="planta-img-lateral" />
       </div>
 
       <div className="planta-secao">

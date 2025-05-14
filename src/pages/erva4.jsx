@@ -1,18 +1,22 @@
 import React from "react";
 import "./ervaGlobal.css";
 import CopaibaImg from "../assets/OleodeCopaiba.jpg";
+import CopaibaImg2 from "../assets/OleodeCopaiba2.jpg";
 
 function Copaiba() {
   return (
     <div className="planta-container">
-      <div className="planta-header">
+      <div className="planta-header-central">
         <img src={CopaibaImg} alt="Óleo de Copaíba" className="planta-img-lateral" />
-        <div className="planta-header-texto">
+
+        <div className="planta-header-texto centralizado">
           <h1>Óleo de Copaíba</h1>
-          <p><strong>Nome científico:</strong> <em>Copaifera langsdorffii</em></p>
+        <p><strong>Nome científico (planta):</strong> <em>Copaifera langsdorffii</em></p>
           <p><strong>Nome popular:</strong> Copaíba</p>
           <p><strong>Parte usada:</strong> Resina (óleo extraído do tronco)</p>
         </div>
+
+        <img src={CopaibaImg2} alt="Árvore de Copaíba" className="planta-img-lateral" />
       </div>
 
       <div className="planta-secao">

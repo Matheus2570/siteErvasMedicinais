@@ -1,18 +1,22 @@
 import React from "react";
 import "./ervaGlobal.css";
 import GuaranaImg from "../assets/PoDeGuarana.jpg";
+import GuaranaImg2 from "../assets/PoDeGuarana2.jpg";
 
 function Guarana() {
   return (
     <div className="planta-container">
-      <div className="planta-header">
+      <div className="planta-header-central">
         <img src={GuaranaImg} alt="Guaraná em pó" className="planta-img-lateral" />
-        <div className="planta-header-texto">
+        
+        <div className="planta-header-texto centralizado">
           <h1>Guaraná em Pó</h1>
-          <p><strong>Nome científico:</strong> <em>Paullinia cupana</em></p>
+          <p><strong>Nome científico (planta):</strong> <em>Paullinia cupana</em></p>
           <p><strong>Nome popular:</strong> Guaraná</p>
           <p><strong>Parte usada:</strong> Sementes (moídas em pó)</p>
         </div>
+
+        <img src={GuaranaImg2} alt="Planta do guaraná" className="planta-img-lateral" />
       </div>
 
       <div className="planta-secao">

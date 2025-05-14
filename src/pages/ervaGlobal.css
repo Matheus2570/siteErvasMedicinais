@@ -9,38 +9,50 @@
   }
   
   /* Cabeçalho com imagem ao lado */
-  .planta-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-  }
-  
-  .planta-img-lateral {
-    width: 300px;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-  }
-  
-  .planta-header-texto {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .planta-header-texto h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-    color: var(--cor-texto);
-  }
-  
-  .planta-header-texto p {
-    font-size: 1.1rem;
-    color: var(--cor-texto);
-    margin-bottom: 0.4rem;
-  }
+ .planta-header-central {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.planta-header {
+  display: flex;
+  flex-direction: row; /* Alinha em linha (horizontalmente) */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Evita quebra feia em telas pequenas */
+  gap: 20px;
+}
+
+
+.planta-img-lateral {
+  width: 220px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.planta-header-texto.centralizado {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+.planta-header-texto.centralizado h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--cor-texto);
+}
+
+.planta-header-texto.centralizado p {
+  font-size: 1.1rem;
+  color: var(--cor-texto);
+  margin-bottom: 0.4rem;
+}
   
   /* Seções informativas */
   .planta-secao {
