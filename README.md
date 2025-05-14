@@ -39,4 +39,4 @@ O projeto é composto pelos seguintes arquivos principais:
 Para visualizar o projeto em produção, acesse:
 
 ```bash
-https://seu-projeto-biologia-indigenas.vercel.app
+https://site-ervas-medicinais.vercel.app/
