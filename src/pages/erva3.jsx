@@ -6,42 +6,54 @@ import AndirobaImg2 from "../assets/OleodeAndiroba2.jpg";
 function Andiroba() {
   return (
     <div className="planta-container">
-      <div className="planta-header">
-        <img src={AndirobaImg} alt="Óleo de Andiroba" className="planta-img-lateral" />
-        <div className="planta-header-texto">
+      <div className="planta-header-central">
+        <div className="planta-imagem-container">
+          <div className="planta-legenda">
+            <strong>Imagem 1:</strong> O óleo extraído das sementes da andiroba.
+          </div>
+          <img src={AndirobaImg} alt="Óleo de Andiroba" className="planta-img-lateral" />
+        </div>
+
+        <div className="planta-header-texto centralizado">
           <h1>Óleo de Andiroba</h1>
           <p><strong>Nome científico (planta):</strong> <em>Carapa guianensis</em></p>
           <p><strong>Nome popular:</strong> Andiroba</p>
           <p><strong>Parte usada:</strong> Sementes (óleo extraído)</p>
         </div>
-        <img src={AndirobaImg2} alt="Fruto da Andiroba" className="planta-img-lateral" />
+
+        <div className="planta-imagem-container">
+          <div className="planta-legenda">
+            <strong>Imagem 2:</strong> Fruto da andiroba, fonte das sementes para o óleo.
+          </div>
+          <img src={AndirobaImg2} alt="Fruto da Andiroba" className="planta-img-lateral" />
+        </div>
       </div>
 
       <div className="planta-secao">
         <h2>Uso indígena</h2>
         <p>
-          O óleo é usado na pele contra picadas, inflamações e dores. Também serve pra massagear músculos cansados e até espantar insetos.
+          Os povos indígenas usam o óleo de andiroba para cuidar da pele, aplicando-o em picadas de insetos, inflamações e dores. Também é comum o uso para massagear músculos cansados e para ajudar a afastar insetos na floresta.
         </p>
       </div>
 
       <div className="planta-secao">
         <h2>Funciona mesmo?</h2>
         <p>
-          A ciência confirma que ele tem ação anti-inflamatória, cicatrizante e repelente. É cheio de ácidos graxos benéficos.
+          Pesquisas mostram que o óleo possui propriedades anti-inflamatórias, cicatrizantes e repelentes naturais. Ele é rico em ácidos graxos e compostos que ajudam a proteger e regenerar a pele.
         </p>
       </div>
 
       <div className="planta-secao">
         <h2>Uso atual</h2>
         <p>
-          É usado em cosméticos, cremes, sabonetes e loções calmantes. Também é vendido como óleo puro, direto da floresta pra sua pele.
+          Hoje, o óleo de andiroba é usado em diversos produtos, como cremes, sabonetes e loções calmantes. Também pode ser encontrado puro, vendido direto da floresta, para quem busca um produto natural para a pele.
         </p>
       </div>
 
       <div className="planta-secao">
         <h2>Alternativa parecida</h2>
         <p>
-          O óleo de copaíba é uma alternativa natural bem parecida, usado pra cuidar da pele e tratar inflamações também.
+          O óleo de copaíba é uma alternativa bastante parecida, também usado para tratar a pele e reduzir inflamações. Ambos são reconhecidos pela ação natural e benefícios para a saúde.
         </p>
       </div>
     </div>
