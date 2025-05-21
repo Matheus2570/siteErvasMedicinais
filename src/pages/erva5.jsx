@@ -19,6 +19,8 @@ function Guarana() {
           <p><strong>Nome científico (planta):</strong> <em>Paullinia cupana</em></p>
           <p><strong>Nome popular:</strong> Guaraná</p>
           <p><strong>Parte usada:</strong> Sementes (moídas em pó)</p>
+          <p><strong>Onde se encontra:</strong> Nativo da Amazônia brasileira</p>
+
         </div>
 
         <div className="planta-imagem-container">

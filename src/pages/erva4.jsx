@@ -19,6 +19,8 @@ function Copaiba() {
           <p><strong>Nome científico (planta):</strong> <em>Copaifera langsdorffii</em></p>
           <p><strong>Nome popular:</strong> Copaíba</p>
           <p><strong>Parte usada:</strong> Resina (óleo extraído do tronco)</p>
+          <p><strong>Onde se encontra:</strong> A copaíba é uma árvore típica da Amazônia e também do Cerrado brasileiro.</p>
+        
         </div>
 
         <div className="planta-imagem-container">

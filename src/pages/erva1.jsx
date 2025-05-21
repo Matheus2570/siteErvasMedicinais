@@ -19,6 +19,7 @@ function AcoitaCavalo() {
           <p><strong>Nome científico (planta):</strong> <em>Luehea divaricata</em></p>
           <p><strong>Nome popular:</strong> Açoita-Cavalo</p>
           <p><strong>Parte usada:</strong> Casca do tronco</p>
+          <p><strong>Onde se encontra:</strong> Presente em diversas regiões do Brasil, principalmente no Sul, Sudeste e Centro-Oeste.</p>
         </div>
 
         <div className="planta-imagem-container">

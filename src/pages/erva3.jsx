@@ -19,6 +19,7 @@ function Andiroba() {
           <p><strong>Nome científico (planta):</strong> <em>Carapa guianensis</em></p>
           <p><strong>Nome popular:</strong> Andiroba</p>
           <p><strong>Parte usada:</strong> Sementes (óleo extraído)</p>
+          <p><strong>Onde se encontra:</strong> Muito comum na Amazônia e região norte do Brasil.</p>
         </div>
 
         <div className="planta-imagem-container">

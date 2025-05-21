@@ -19,6 +19,7 @@ function Catuaba() {
           <p><strong>Nome científico (planta):</strong> <em>Erythroxylum catuaba</em></p>
           <p><strong>Nome popular:</strong> Catuaba</p>
           <p><strong>Parte usada:</strong> Casca</p>
+          <p><strong>Onde se encontra:</strong> Encontrada principalmente na Mata Atlântica, especialmente no Sudeste e Sul do Brasil.</p>
         </div>
 
         <div className="planta-imagem-container">
