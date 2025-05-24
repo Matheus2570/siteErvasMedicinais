@@ -12,6 +12,11 @@ function Nav() {
     setMenuAberto(!menuAberto);
   };
 
+
+  const handleMenuClick = () => {
+    setMenuAberto(false); // Fecha o menu ao clicar em uma opção
+  };
+
   // Hook para detectar cliques fora do menu e botão
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -49,12 +54,12 @@ function Nav() {
       {menuAberto && (
         <div ref={menuRef} id="menu-opcoes" className="menu-opcoes">
           <ul>
-            <li><Link to="/" className="navLink">🏠 Página Principal</Link></li>
-            <li><Link to="/erva1" className="navLink">🌿 Casca de Açoita-Cavalo</Link></li>
-            <li><Link to="/erva2" className="navLink">🍃 Catuaba</Link></li>
-            <li><Link to="/erva3" className="navLink">🌱 Óleo de Andiroba</Link></li>
-            <li><Link to="/erva4" className="navLink">🌳 Óleo de Copaíba</Link></li>
-            <li><Link to="/erva5" className="navLink">🍂 Guaraná em Pó</Link></li>
+            <li><Link onClick={handleMenuClick} to="/" className="navLink">🏠 Página Principal</Link></li>
+            <li><Link  onClick={handleMenuClick}  to="/erva1" className="navLink">🌿 Casca de Açoita-Cavalo</Link></li>
+            <li><Link onClick={handleMenuClick}  to="/erva2" className="navLink">🍃 Catuaba</Link></li>
+            <li><Link onClick={handleMenuClick}  to="/erva3" className="navLink">🌱 Óleo de Andiroba</Link></li>
+            <li><Link onClick={handleMenuClick}  to="/erva4" className="navLink">🌳 Óleo de Copaíba</Link></li>
+            <li><Link onClick={handleMenuClick}  to="/erva5" className="navLink">🍂 Guaraná em Pó</Link></li>
           </ul>
         </div>
       )}
